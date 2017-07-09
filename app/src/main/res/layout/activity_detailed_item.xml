@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.ruazosa.evidencijaopremeulaboratoriju.DetailedItemActivity">
+
+    <TextView
+        android:id="@+id/deviceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/device"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/deviceView"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deviceTextView"
+        android:layout_toEndOf="@+id/deviceTextView"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deviceView"
+        android:layout_toEndOf="@+id/deviceView"
+        android:text="@string/type"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/typeView"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/typeLabel"
+        android:layout_toEndOf="@+id/typeLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/subtypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/typeView"
+        android:layout_toEndOf="@+id/typeView"
+        android:text="@string/subtype"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtypeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/subtypeLabel"
+        android:layout_toEndOf="@+id/subtypeLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/numberOfItemsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/deviceTextView"
+        android:text="@string/numberOfItemsLabel"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numberOfItemsView"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/numberOfItemsLabel"
+        android:layout_toEndOf="@+id/numberOfItemsLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/idLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idLabel"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/typeLabel"
+        android:layout_toEndOf="@+id/deviceView" />
+
+    <TextView
+        android:id="@+id/idView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/idLabel"
+        android:layout_toEndOf="@+id/idLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/kitLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/numberOfItemsLabel"
+        android:text="@string/kit"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kitView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kitLabel"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/descLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kitView"
+        android:text="@string/description"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/availableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/descView"
+        android:text="@string/status"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusColorBox"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/availableLabel"
+        android:layout_toEndOf="@+id/availableLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/availableLegendLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/availableLabel"
+        android:text="@string/availableLabel"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/availableColorBox"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availableLabel"
+        android:layout_toEndOf="@+id/availableLegendLabel"
+        android:background="#00c853" />
+
+    <TextView
+        android:id="@+id/reservedLegendLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reservedLabel"
+        android:textSize="14sp"
+        android:layout_above="@+id/locationNameView"
+        android:layout_toEndOf="@+id/numberOfItemsView" />
+
+    <TextView
+        android:id="@+id/reservedColorBox"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/reservedLegendLabel"
+        android:layout_toEndOf="@+id/reservedLegendLabel"
+        android:background="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/assignedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unavailableLabel"
+        android:layout_above="@+id/locationNameView"
+        android:layout_toStartOf="@+id/subtypeView" />
+
+    <TextView
+        android:id="@+id/redColorBox"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/assignedLabel"
+        android:layout_toEndOf="@+id/assignedLabel"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/locationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/availableLegendLabel"
+        android:text="@string/location"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/locationNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/locationLabel"
+        android:layout_toEndOf="@+id/locationLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/responsibleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/responsible"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/locationLabel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/responsibleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/responsibleLabel"
+        android:layout_toEndOf="@+id/responsibleLabel"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/deliveryDateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deliveryLabel"
+        android:layout_toEndOf="@+id/deliveryLabel"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/reserveButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reserve"
+        android:layout_below="@+id/responsibleLabel"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/borrowButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/borrow"
+        android:layout_below="@+id/reserveButton"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/removeItemButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remove_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/previousBorrowsButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/borrowButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/previous_borrows" />
+
+    <Button
+        android:id="@+id/returnItemButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/removeItemButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/return_item" />
+
+</android.widget.RelativeLayout>

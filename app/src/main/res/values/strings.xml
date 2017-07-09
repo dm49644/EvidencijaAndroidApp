@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Evidencija Opreme U Laboratoriju</string>
+    <string name="password">Password</string>
+    <string name="id">ID</string>
+    <string name="submit">Submit</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log In</string>
+    <string name="logInPassword">Password</string>
+    <string name="logInUsername">Username</string>
+    <string name="filter">Category:</string>
+    <string name="spinner_text">Select filters</string>
+    <string name="search">Search</string>
+    <string name="available">Available</string>
+    <string name="reserved">Reserved</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="users">Users</string>
+    <string name="add_item">add item</string>
+    <string name="search_for">Search for...</string>
+    <string name="device">Device:</string>
+    <string name="type">Type:</string>
+    <string name="subtype">Subtype:</string>
+    <string name="numberOfItemsLabel">#</string>
+    <string name="idLabel">ID:</string>
+    <string name="kit">Kit</string>
+    <string name="description">Description:</string>
+    <string name="status">Status:</string>
+    <string name="reservedLabel">Reserved:</string>
+    <string name="availableLabel">Available:</string>
+    <string name="unavailableLabel">Unavailable:</string>
+    <string name="location">Location:</string>
+    <string name="responsible">Responsible:</string>
+    <string name="delivery">Delivery:</string>
+    <string name="reserve">Reserve</string>
+    <string name="borrow">Borrow</string>
+    <string name="remove_item">Remove Item</string>
+    <string name="add_item_label">Add item:</string>
+    <string name="device_letter">Device...</string>
+    <string name="description_input">Description...</string>
+    <string name="id_input">ID...</string>
+    <string name="kit_input">Kit...</string>
+    <string name="type_input">Type...</string>
+    <string name="unavailable_radio_button">Unavailable</string>
+    <string name="available_radio_button">Available</string>
+    <string name="reserved_radio_button">Reserved</string>
+    <string name="delivery_input">Delivery date...</string>
+    <string name="location_input">Location...</string>
+    <string name="ok_button">OK</string>
+    <string name="read_from_csv">Read from CSV</string>
+    <string name="registered_users">Registered users:</string>
+    <string name="unconfirmed_users">Unconfirmed users:</string>
+    <string name="number">Number...</string>
+    <string name="subtype_input_text">Subtype...</string>
+    <string name="inventory_number">Inventory number...</string>
+    <string name="previous_borrows">Previous Borrows</string>
+    <string name="duration_period">Duration period...</string>
+    <string name="professor_s_first_and_last_name">Professor\'s first and last name</string>
+    <string name="student_s_first_and_last_name">Student\'s first and last name</string>
+    <string name="done">Done</string>
+    <string name="return_item">Return Item</string>
+    <string-array name="spinner_choices">
+        <item>Kit</item>
+        <item>Type</item>
+        <item>Subtype</item>
+        <item>ID</item>
+        <item>Device</item>
+        <item>Description</item>
+    </string-array>
+</resources>

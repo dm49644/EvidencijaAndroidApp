@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.ruazosa.evidencijaopremeulaboratoriju.UsersActivity">
+
+    <TextView
+        android:id="@+id/unconfirmedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#3a00bcd4"
+        android:text="@string/unconfirmed_users"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/unconfirmedUsersView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/unconfirmedTextView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/regUsersTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/unconfirmedUsersView"
+        android:background="#3a00bcd4"
+        android:text="@string/registered_users"
+        android:textColorLink="#3b00e5ff"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/registeredUsersView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/regUsersTextView" />
+</android.widget.RelativeLayout>

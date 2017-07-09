@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.ruazosa.evidencijaopremeulaboratoriju.SearchActivity">
+
+    <TextView
+        android:id="@+id/filterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:text="@string/filter"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/filterTextView"
+        android:layout_toEndOf="@+id/filterTextView"
+        android:background="?attr/colorControlHighlight"
+        android:entries="@array/spinner_choices"
+        android:prompt="@string/spinner_text"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/filterTextView"
+        android:layout_below="@+id/filterTextView"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="@string/search_for"
+        android:inputType="textPersonName"
+        tools:ignore="LabelFor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchEditText"
+        android:layout_marginTop="38dp"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:id="@+id/availableRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/available"
+            android:textAlignment="viewStart" />
+
+        <RadioButton
+            android:id="@+id/unavailableRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/unavailable"
+            android:textAlignment="textStart" />
+
+        <RadioButton
+            android:id="@+id/reservedRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reserved"
+            android:textAlignment="textStart" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/searchButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/search" />
+
+    <Button
+        android:id="@+id/usersButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginBottom="47dp"
+        android:text="@string/users" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/usersButton"
+        android:layout_alignBottom="@+id/usersButton"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:text="@string/add_item" />
+
+</android.widget.RelativeLayout>

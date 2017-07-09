@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.fer.ruazosa.evidencijaopremeulaboratoriju.RegisterActivity"
+    tools:layout_editor_absoluteY="80dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/IDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        android:layout_marginTop="130dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/IDEditText"
+        android:layout_below="@+id/IDEditText"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/usernameEditText"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_marginTop="20dp"
+        android:width="300dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:width="150dp"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="345dp" />
+</android.widget.RelativeLayout>
